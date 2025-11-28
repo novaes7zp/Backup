@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando</title>
+    <style>
+        body{
+            background-color: rgb(83, 83, 83);
+            color: white;
+            font: normal 25px arial;
+            text-shadow: 1px 1px 0px black;
+        }
+        h1{
+            text-align: center;
+        }
+        #btn{
+            margin: 20px 0 5px 10px;
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            #n1, #n2{
+                width: 46%;
+                padding: 10px;
+                height: 20px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                border: 2px solid rgba(0, 255, 0, 0.267);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div id="container">
+        <input type="number" name="n1" id="n1" placeholder="Digite um número"> +
+        <input type="number" name="n2" id="n2" placeholder="Digite um número">
+    </div>
+    <button id="btn" onclick="somou()">Somar</button>
+    <div id="res">Resultado</div>
+
+    <script>
+        function somou(){
+            var nu1 = document.getElementById('n1')
+            var nu2 = document.getElementById('n2')
+            var res = document.getElementById('res')
+            var n1 = Number(nu1.value)
+            var n2 = Number(nu2.value)
+            var total = n1 + n2
+            res.innerHTML = total
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+.container {
+    max-width: 762px;
+    background-color: rgba(253, 253, 253, 0.15);
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(24, 24, 24, 0.671);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px black;
+
+    & h1 {
+        text-align: center;
+        font-size: 32px;
+        color: #b3383a;
+    }
+
+    & h2 {
+        text-align: center;
+        font-size: 25px;
+        color: #ffffffde;
+    }
+    
+    & .input-field {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px auto;
+    }
+}
+
+body {
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("../../assets/fotodecidadevert.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.input-field input {
+    width: 100%;
+    height: 90%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(24, 24, 24, 0.671);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
+    padding: 20px 25px;
+
+    
+}
+.input-field input::placeholder {
+    color: #ffffffc7;
+}
+
+.input-field .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 21px;
+    color: #fff;
+    text-shadow: 1px 1px 3px black;
+}
+
+.container .recall-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+
+.recall-forget label {
+    color: #fff;
+}
+
+.recall-forget input {
+    margin-right: 5px;
+}
+
+.recall-forget a, .sigup-link p a{
+    color: #fff;
+    text-decoration: none;
+    transition: opacity .1s ease;
+}
+
+.recall-forget a:hover,
+.sigup-link a:hover  {
+    opacity: .4;
+}
+
+.container button {
+    width: 100%;
+    height: 43px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
+    cursor: pointer;
+    font-size: 16px;
+    text-shadow: none;
+    font-weight: bold;
+    color: #000000de;
+    transition: background-color .2s ease;
+}
+
+.container button:hover {
+    color: rgba(0, 0, 0, 0.897);
+    background-color: #ffffff79;
+}
+
+.container .sigup-link {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px;
+}
+
+.sigup-link p {
+    text-shadow: none;
+    color: rgba(0, 0, 0, 0.719);
+    font-weight: normal;
+    font-size: 17px;
+}
