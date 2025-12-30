@@ -1,12 +1,23 @@
-Get-AppxPackage *xbox* | Remove-AppxPackage
-Get-AppxPackage *bing* | Remove-AppxPackage
-Get-AppxPackage *zune* | Remove-AppxPackage
-Get-AppxPackage *skype* | Remove-AppxPackage
-Get-AppxPackage *officehub* | Remove-AppxPackage
-Get-AppxPackage *onenote* | Remove-AppxPackage
-Get-AppxPackage *maps* | Remove-AppxPackage
-Get-AppxPackage *people* | Remove-AppxPackage
-Get-AppxPackage *solitaire* | Remove-AppxPackage
-Get-AppxPackage *weather* | Remove-AppxPackage
-Get-AppxPackage *3d* | Remove-AppxPackage
-Get-AppxPackage *mixedreality* | Remove-AppxPackage
+Stop-Service "SysMain" -Force
+Set-Service "SysMain" -StartupType Disabled
+
+Stop-Service "WSearch" -Force
+Set-Service "WSearch" -StartupType Disabled
+
+Stop-Service "DiagTrack" -Force
+Set-Service "DiagTrack" -StartupType Disabled
+
+Stop-Service "dmwappushservice" -Force
+Set-Service "dmwappushservice" -StartupType Disabled
+
+Stop-Service "MapsBroker" -Force
+Set-Service "MapsBroker" -StartupType Disabled
+
+Stop-Service "Fax" -Force
+Set-Service "Fax" -StartupType Disabled
+
+Stop-Service "XblGameSave" -Force
+Set-Service "XblGameSave" -StartupType Disabled
+
+Stop-Service "XboxNetApiSvc" -Force
+Set-Service "XboxNetApiSvc" -StartupType Disabled
